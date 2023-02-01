@@ -1,8 +1,8 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const routerLookAfter = jsonServer.router('feracode/look-after.json')
-const routerVUTTR = jsonServer.router('vuttr/vuttr.json')
-const evolucionalJoBTest = jsonServer.router('evolucional/job-test.json')
+const routerLookAfter = jsonServer.router('./feracode/look-after.json')
+const routerVUTTR = jsonServer.router('./vuttr/vuttr.json')
+const evolucionalJoBTest = jsonServer.router('./evolucional/job-test.json')
 const middlewares = jsonServer.defaults()
 
 const getAuth = name => (process.env[name] || process.env.AUTHORIZATION);
