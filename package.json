@@ -20,5 +20,8 @@
   "homepage": "https://github.com/matheusAle/fake-server#readme",
   "dependencies": {
     "json-server": "^0.15.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
